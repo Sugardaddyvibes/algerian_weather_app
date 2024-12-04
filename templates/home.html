@@ -1,0 +1,58 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather Data Form</title>
+    </head>
+    <body>
+        <h1>Weather Data Form</h1>
+        <form action="{{url_for('predict_datapoint')}}" method="POST">
+            <!-- Temperature -->
+             <label for="temperature">Temperature</label>
+             <input type="text" id="temperature" name="Temperature" placeholder="Enter Temperature" required><br><br>
+         
+            <!-- RH (Relative Humidity) -->
+             <label for="rh">RH (Relative Humidity)</label>
+             <input type="text" id="rh" name="RH" placeholder="Enter RH" required><br><br>
+
+            <!-- Wind Speed -->
+             <label for="ws">Wind Speed</label>
+             <input type="text" id="ws" name="Ws" placeholder="Enter Wind Speed" required><br><br>
+            <!-- Rain -->
+             <label for="rain">Rain</label>
+             <input type="text" id="rain" name="Rain" placeholder="Enter Rain" required><br><br>
+            <!-- FFMC -->
+             <label for="ffmc">FFMC</label>
+             <input type="text" id="ffmc" name="FFMC" placeholder="Enter FFMC" required><br><br>
+            <!-- DMC -->
+             <label for="dmc">DMC</label>
+             <input type="text" id="dmc" name="DMC" placeholder="Enter DMC" required><br><br>
+            <!-- ISI -->
+             <label for="isi">ISI</label>
+             <input type="text" id="isi" name="ISI" placeholder="Enter ISI" required><br><br>
+            <!-- Classes -->
+             <label for="classes">Classes</label>
+             <input type="text" id="classes" name="Classes" placeholder="Enter Classes" required><br><br>
+            <!-- Region -->
+             <label for="region">Region</label>
+             <input type="text" id="region" name="Region" placeholder="Enter Region" required><br><br>
+            <!-- Submit Button -->
+             <button type="submit" class="btn btn-primary btn-block btn-large">predict</button>
+        </form>
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <h2>
+        THE FWI PREDICATION IS {{results}}
+    </h2>
+
+</body>
+</html>
